@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex; /* Flexbox para organizar logo e texto */
+    justify-content: center; /* Centraliza o conteúdo do header */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 20px;
+    background: linear-gradient(to right, #00008b, #000000); /* Fundo azul e preto */
+    color: rgb(11, 240, 237);
+}
+
+header .header-text {
+    text-align: center; /* Centraliza o texto */
+    flex-grow: 1; /* O texto ocupa o espaço restante */
+}
+
+header img.logo {
+    max-width: 120px; /* Limita o tamanho da logo */
+    height: auto; /* Mantém a proporção da logo */
+    position: absolute; /* A logo ficará fixa à esquerda */
+    left: 20px; /* Espaço entre a logo e a borda */
+}
+
+header h1 {
+    font-size: 1.5rem; /* Ajusta o tamanho do título */
+    margin: 5px 0;
+}
+
+header h2 {
+    font-size: 1rem; /* Tamanho menor para o subtítulo */
+    margin: 5px 0;
+    font-style: italic; /* Itálico para o subtítulo */
+}
+
+header h3 {
+    font-size: 1.2rem; /* Aumenta o tamanho do texto do h3 */
+    margin: 5px 0;
+    font-weight: bold; /* Destaca o texto */
+    color: #ff00dd; /* Texto amarelo para destaque */
+}
+#chart-container {
+    max-width: 100%; /* O gráfico ocupará no máximo 100% da largura da página */
+    height: 300px; /* Reduz a altura do gráfico para não ocupar tanto espaço */
+    margin: 0 auto; /* Centraliza o gráfico horizontalmente */
+    padding: 10px;
+}
+
+#chart {
+    width: 100% !important; /* Garante que o gráfico ocupe toda a largura do contêiner */
+    height: 100% !important; /* Garante que o gráfico ocupe toda a altura do contêiner */
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+#flashcards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.flashcard {
+    background-color: #80ff86;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.flashcard:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #00796b;
+    color: white;
+    margin-top: 2rem;
+}
